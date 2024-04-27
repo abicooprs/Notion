@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+
+	<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "Plus Jakarta Sans", sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #c8cfe3;
+		}
+
+		.border {
+			border: 3px solid #c8cfe3;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #6785db;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border backgroun">
+		<a id="home" onclick="navigate(this.idk)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+                <a id="Tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list"></i> Tasks</a>
+                <a id="Study" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop"></i> Study</a>
+                <a id="Projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects</a>
+                <a id="Recs" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-tv"></i> Recs</a>
+                <a id="Hobbies" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-clock"></i> Hobbies</a>
+                <a id="Interests" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-star"></i> Interests</a>
+                <a id="Goals-&-Habits" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bullseye"></i> Goals-&-Habits</a>
+                <a id="Self-Care" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-heart"></i> Self-Care</a>
+
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/Everyday-Life-c5fff97eef9c41cf846eb555439d0fe9", '_parent').focus();
+			else if (id == 'Study') 
+                                window.open("https://www.notion.so/Study-736378f8df484908a436607f4f535775", '_parent').focus();
+                        else if (id == 'Tasks')
+				window.open("https://www.notion.so/Tasks-f9eca92fc3d74480bf9d08b7fa27f913", '_parent').focus();
+                        else if (id == 'Projects') 
+                                window.open("https://www.notion.so/Long-term-projects-997fddb113cd491fad4b9f8fad4e8853", '_parent').focus();
+                        else if (id == 'Recs') 
+                                window.open("https://www.notion.so/Recommendations-101f7137b135409fbb80048ed06d4260", '_parent').focus();
+                        else if (id == 'Hobbies') 
+                                window.open("https://www.notion.so/Hobbies-942787b4f3df470db1addf24a3f6f9ef", '_parent').focus();
+                        else if (id == 'Interests') 
+                                window.open("https://www.notion.so/Interests-50d80e594bea4624800d236267ea65df", '_parent').focus();
+                        else if (id == 'Goals-&-Habits') 
+                                window.open("https://www.notion.so/Goals-and-Habits-b6e31a3b5253488583e415f490d1e59d", '_parent').focus();
+                        else if (id == 'Self-Care') 
+                                window.open("https://www.notion.so/Self-Care-3-6b90ea5305b1419e8f1869682a18ac42", '_parent').focus();
+
+
+
+
+		
+	</script>
+
+
+</body>
+
+</html>
